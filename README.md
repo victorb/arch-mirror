@@ -1,6 +1,11 @@
 ## arch-mirror
 > Scripts for syncing arch repositories, adding to IPFS and maintaining publishes to IPNS
 
+# Requirements
+
+- go-ipfs version 0.4.14 or later (might work with earlier but tested with 0.4.14)
+- about 100GB of diskspace (real usage will be around ~70GB but good with a buffer)
+
 # Using as a repository
 
 - Add `https://ipfs.io/ipns/:insert-ipns-here` to your list of repositories
@@ -16,6 +21,13 @@ Want to setup your own IPFS mirror? It's easy, just follow these steps:
   see fit
 - Run `./ipfsify.sh` to initialize a local IPFS repository and add the full repository
   to it
-- Run`./publish.sh` at least one time manually to publish the latest IPFS hash to IPNS
-- Add `./publish.sh` to be run at least once per day to ensure the IPNS record it kept
-  up to date
+
+The final output of `./ipfsify.sh` should print a IPNS address you can use as the link
+to the repository.
+
+Make sure to run both of these scripts via cron (or similar software) at least
+once per day to maintain a updated repository.
+
+# License
+
+MIT 2018 - Victor Bjelkholm
