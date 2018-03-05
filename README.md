@@ -1,6 +1,8 @@
 ## arch-mirror
 > Scripts for syncing arch repositories, adding to IPFS and maintaining publishes to IPNS
 
+Follow along with discussions here: https://github.com/ipfs/notes/issues/84
+
 # Requirements
 
 - go-ipfs version 0.4.14 or later (might work with earlier but tested with 0.4.14)
@@ -8,9 +10,19 @@
 
 # Using as a repository
 
-- Add `https://ipfs.io/ipns/:insert-ipns-here` to your list of repositories
+- Add `https://ipfs.io/ipns/arch.victor.earth` to your list of repositories
 - Run `pacman -Syy` to upgrade your local package list
 - Enjoy
+
+There are a few ways you can use the IPFS Arch mirror.
+
+- Use IPNS directly (slow): https://ipfs.io/ipns/QmNmkoYTwgaDJzxzZASSoNvVapuRXBgQW9RsZ6PQNGhzMA
+- Use IPFS directly (fast but harder for you to update): QmcoLd4z5QL63tLTG8PKX5BvXC28PHmCayRWkCjHaXvvXG,
+- Use DNS (fast but centralized naming [also currently no https]): http://arch.victor.earth
+- Use DNS via IPNS (fast and can be resolved anywhere): https://ipfs.io/ipns/arch.victor.earth
+
+I would recommend to use DNS via IPNS for now, until performance issues with IPNS
+has been resolved.
 
 # Using as a repository mirror
 
