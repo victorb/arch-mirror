@@ -10,6 +10,9 @@ Follow along with discussions here: https://github.com/ipfs/notes/issues/84
 
 # Using as a repository
 
+## WARNING, NOT YET FUNCTIONAL
+> See the following comment: https://github.com/ipfs/notes/issues/84#issuecomment-370439892
+
 - Add `https://ipfs.io/ipns/arch.victor.earth` to your list of repositories
 - Run `pacman -Syy` to upgrade your local package list
 - Enjoy
