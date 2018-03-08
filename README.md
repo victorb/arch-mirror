@@ -38,6 +38,7 @@ caching and you help rehost the packages you download.
 
 - go-ipfs version 0.4.14 or later (might work with earlier but tested with 0.4.14)
 - about 150GB of diskspace (real usage will be around ~100GB but good with a buffer)
+  - This diskspace requirement only applies if you want to host your own mirror, not if you're using a existing one
 
 #### Setup
 
@@ -57,7 +58,7 @@ to the repository.
 Make sure to run both `syncrepo.sh` and `ipfsify.sh` scripts via cron (or similar software) at least
 once per day to maintain a updated repository.
 
-### Stats
+### Stats (only interesting for people who want to host their own mirror)
 
 - `./arch-repository/` (downloaded index + packages) ends up ~35GB but after making symlinks into real files, it becomes ~70GB
 - `./.ipfs/` (the IPFS repository) ends up being ~35GB even when making symlinks into real files, because of the de-duplication
