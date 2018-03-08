@@ -10,7 +10,7 @@ Add `Server = https://ipfs.io/ipns/arch.victor.earth/$repo/os/$arch` in the top 
 ### Using as a repository
 
 - Add `https://ipfs.io/ipns/arch.victor.earth/$repo/os/$arch` to your list of repositories
-- Run `pacman -Syy` to upgrade your local package list
+- Run `pacman -Syyu` to upgrade your packages
 - Enjoy immutable and distributed updates to your system!
 
 There are a few ways you can use the IPFS Arch mirror.
