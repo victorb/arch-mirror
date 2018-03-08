@@ -18,7 +18,7 @@ ipfs config --json Datastore.NoSync true
 echo "## Generate IPNS key"
 ipfs key gen --type=rsa --size=2048 "arch-repository" || true
 
-echo "Adding `arch-repository/` to IPFS"
+echo "Adding 'arch-repository/' to IPFS"
 
 # TODO should be with --nocopy but bug in the way...
 # ipfs add -r --raw-leaves --local --nocopy ./arch-repository | tee hash-list

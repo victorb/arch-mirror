@@ -82,4 +82,7 @@ rsync_cmd \
 	"${source_url}" \
 	"${target}"
 
-#echo "Last sync was $(date -d @$(cat ${target}/lastsync))"
+echo "Last sync was $(date -d @$(cat ${target}/lastsync))"
+
+# Removing symlinks
+find arch-repository -type l -exec ./remove-symlink.sh {} +
