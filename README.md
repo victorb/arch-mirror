@@ -10,9 +10,6 @@ Follow along with discussions here: https://github.com/ipfs/notes/issues/84
 
 # Using as a repository
 
-## WARNING, NOT YET FUNCTIONAL
-> See the following comment: https://github.com/ipfs/notes/issues/84#issuecomment-370439892
-
 - Add `https://ipfs.io/ipns/arch.victor.earth` to your list of repositories
 - Run `pacman -Syy` to upgrade your local package list
 - Enjoy
@@ -43,6 +40,15 @@ to the repository.
 Make sure to run both of these scripts via cron (or similar software) at least
 once per day to maintain a updated repository.
 
+# Stats
+
+- `arch-repository` ends up ~35GB but after making symlinks into real files, it becomes ~70GB
+- `.ipfs` (the IPFS repository) ends up being ~35GB even when making symlinks into real files, because of the de-duplication
+
 # License
 
 MIT 2018 - Victor Bjelkholm
+
+# Findings
+
+- go-ipfs gateway does not support symlinks: https://github.com/ipfs/go-ipfs/pull/3508
