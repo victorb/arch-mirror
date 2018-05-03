@@ -32,6 +32,13 @@ a local go-ipfs node. Once you have it up and running, you can replace `ipfs.io`
 with `localhost:8080` and everything should work the same, except you get better
 caching and you help rehost the packages you download.
 
+Tip: as of early 2018 IPFS is having problems with content discovery.  To speed 
+up things and avoid timeouts it may be smart to be sure your swarm has a direct 
+connection to one of the peers hosting the mirror:
+
+    ipfs swarm connect /ip4/88.18.104.235/tcp/7000/ipfs/QmUWA5FD6otih6aCqnSTSy4cQbcttwCYpA6mYMPJ9qAyKi 
+    ipfs swarm connect /ip4/167.99.95.100/tcp/4001/ipfs/QmX1WWwNwfEsuzsqWFVstnEkzVFN5i4kefqJQMb5S4umAT
+
 ### Hosting your own mirror
 
 #### Requirements
