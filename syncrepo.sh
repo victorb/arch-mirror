@@ -30,15 +30,16 @@ bwlimit=0
 # rsync://rsync.archlinux.org/ftp_tier1
 # Otherwise chose a tier 1 mirror from this list and use its rsync URL:
 # https://www.archlinux.org/mirrors/
-# source_url='rsync://ftp.acc.umu.se/mirror/archlinux/'
+source_url='rsync://ftp.acc.umu.se/mirror/archlinux/'
 # source_url='rsync://fooo.biz/archlinux/'
-source_url='rsync://archlinux.mailtunnel.eu/archlinux/'
+# source_url='rsync://archlinux.mailtunnel.eu/archlinux/'
 
 # An HTTP(S) URL pointing to the 'lastupdate' file on your chosen mirror.
 # If you are a tier 1 mirror use: http://rsync.archlinux.org/lastupdate
 # Otherwise use the HTTP(S) URL from your chosen mirror.
 # lastupdate_url='https://fooo.biz/archlinux/lastupdate'
-lastupdate_url='https://archlinux.mailtunnel.eu/lastupdate'
+# lastupdate_url='https://archlinux.mailtunnel.eu/lastupdate'
+lastupdate_url='https://ftp.acc.umu.se/mirror/lastupdate'
 
 #### END CONFIG
 
