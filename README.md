@@ -57,7 +57,7 @@ Want to setup your own IPFS mirror? It's easy, just follow these steps:
   files so adding and browsing via IPFS works correctly.
 - Run `./ipfsify.sh` to initialize a local IPFS repository and add the full repository
   to it
-- Run `./start-daemon.sh` to run the daemon
+- Run `./run-daemon.sh` to run the daemon
 
 The final output of `./ipfsify.sh` should print a IPNS address you can use as the link
 to the repository.

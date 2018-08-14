@@ -6,7 +6,6 @@ set -x
 echo "## Initializing IPFS Repository"
 
 export IPFS_PATH=$(pwd)/.ipfs
-ipfs init --profile=badgerds || true
 
 echo "## Setting IPFS config"
 ipfs config Addresses.API "/ip4/127.0.0.1/tcp/7001"
